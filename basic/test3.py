@@ -7,15 +7,10 @@ from selenium.common import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
 
 desired_cap = {
-    "deviceName": "Oppo",
-    "udid": "DEAAPJ9DCA45AQEE",
-    "platformName": "Android",
-    "appPackage": "com.jeetproductions.opentalk",
-    "appActivity": "com.jeetproductions.opentalk.MainActivity",
-    "platformVersion": "8",
-    "noReset": True
+  "deviceName": "DEAAPJ9DCA45AQEE",
+  "platformName": "Android",
+  "app": "C:/Users/shabr/OneDrive/Desktop/need/App/General-Store.apk"
 }
-
 driver = webdriver.Remote("http://localhost:4723/wd/hub", desired_cap)
 time.sleep(5)
 
